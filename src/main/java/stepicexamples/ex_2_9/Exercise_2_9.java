@@ -12,14 +12,12 @@ public class Exercise_2_9 {
         Filter<Account>  filter = new Filter<>();
 
         Predicate<Account> nonEmptyAccountsPredicate = account -> account.getBalance() > 0;
-
         List<Account> nonEmptyAccounts = filter.doFilter(accountList, nonEmptyAccountsPredicate);
         nonEmptyAccounts.forEach(account -> System.out.println(account));
 
         List<Account> accountsWithTooMuchMoney = filter.doFilter(accountList, account -> (account.isLocked() == false) && (account.getBalance() >= 100000000));
         accountsWithTooMuchMoney.forEach(account -> System.out.println(account));
     }
-
 
     public static void setBankAccounts(List<Account> accounts) {
         accounts.add(new Account(1L, 2000, true));
