@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.function.LongPredicate;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
@@ -26,7 +27,6 @@ public class IntroToStreams {
         LongStream longStream = LongStream.of(111_111_111L, 333_333_333L);
 
         Stream<BigInteger> concatedStream = Stream.concat(Stream.empty(), Stream.empty());
-
         // Use Stream.generate()
         Stream<User> userStream = Stream.generate(User::new);
         DoubleStream randomStream = DoubleStream.generate(Math::random);
@@ -38,6 +38,16 @@ public class IntroToStreams {
         LongStream rangedStream = LongStream.rangeClosed(100_000, 1_000_000);
 
         // There are also other ways to create a stream: from a file, from I/O stream and so on.
+
+        isPrime(5);
+    }
+
+    static boolean isPrime(int n) {
+        for(int i=2;i<n;i++) {
+            if(n%i==0)
+                return false;
+        }
+        return true;
     }
 
 }
