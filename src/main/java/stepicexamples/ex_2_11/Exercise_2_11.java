@@ -4,6 +4,9 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.IntUnaryOperator;
 
+/**
+ * Understanding of the function composition
+ */
 public class Exercise_2_11 {
 
     public static void main(String[] args) {
