@@ -2,15 +2,18 @@ package stepicexamples.ex_2_9;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Exercise_2_9 {
 
     public static void main(String[] args) {
-        List<Account> accountList = new ArrayList<Account>();
+        List<Account> accountList = new ArrayList<>();
         setBankAccounts(accountList);
         Filter<Account>  filter = new Filter<>();
 
-        List<Account> nonEmptyAccounts = filter.doFilter(accountList, account -> account.getBalance() > 0);
+        Predicate<Account> nonEmptyAccountsPredicate = account -> account.getBalance() > 0;
+
+        List<Account> nonEmptyAccounts = filter.doFilter(accountList, nonEmptyAccountsPredicate);
         nonEmptyAccounts.forEach(account -> System.out.println(account));
 
         List<Account> accountsWithTooMuchMoney = filter.doFilter(accountList, account -> (account.isLocked() == false) && (account.getBalance() >= 100000000));
