@@ -1,5 +1,7 @@
 package stepicexamples.ex_2_10;
 
+import java.util.function.Consumer;
+
 public class Exercise_2_10 {
 
     public static final TernaryIntPredicate allValuesAreDifferentPredicate = (a, b, c) ->  {
