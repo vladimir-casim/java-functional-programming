@@ -2,10 +2,10 @@ package bigjava.examples.callback;
 
 public class Data {
 
-    public static double average(Object[] objects, Measurer meas) {
+    public static double average(Object[] objects, Measurer measurer) {
         double sum = 0;
         for (Object obj : objects) {
-            sum = sum + meas.measure(obj);
+            sum = sum + measurer.measure(obj);
         }
 
         if (objects.length > 0)

@@ -1,6 +1,13 @@
 package bigjava.exercise_e19_7;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Write a lambda expression for a function that
@@ -12,8 +19,21 @@ import java.util.function.Function;
  */
 public class Exercise_e19_7 {
 
-    public static void main(String[] args) {
-        //Function<String> function =
+    public static final String PATH = "src/main/resources/";
+
+    public static void main(String[] args) throws FileNotFoundException {
+        Function<String, String> stringModifier =
+                word -> String.valueOf(word.charAt(0)) +  "..." + String.valueOf(word.charAt(word.length() - 1));
+        File file = new File(PATH + "countries.txt");
+        Scanner input = new Scanner(file);
+        List<String> wordList = new ArrayList<>();
+        while (input.hasNext()) {
+            wordList.add(input.next());
+        }
+
+        Stream<String> wordStream = wordList.stream();
+        List<String> result = wordStream.filter(word -> word.length() > 2).map(stringModifier).collect(Collectors.toList());
+        System.out.println(result);
     }
 
 }
