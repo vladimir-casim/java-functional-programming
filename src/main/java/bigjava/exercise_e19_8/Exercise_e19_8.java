@@ -1,6 +1,7 @@
 package bigjava.exercise_e19_8;
 
 import java.util.Arrays;
+import java.util.function.Function;
 
 /**
  * • E19.8 Write a program that sorts an array of bank accounts by increasing balance. Pass an
@@ -13,7 +14,7 @@ public class Exercise_e19_8 {
         for (Account account: accounts) {
             System.out.println(account);
         }
-        Arrays.sort(accounts, (o1, o2) -> { return o1.getBalance() - o2.getBalance(); });
+        Arrays.sort(accounts,(o1, o2) -> {return o1.getBalance() - o2.getBalance();} );
         System.out.println(" ------------- ");
         for (Account account: accounts) {
             System.out.println(account);

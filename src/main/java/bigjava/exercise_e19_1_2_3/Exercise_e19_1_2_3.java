@@ -60,7 +60,7 @@ public class Exercise_e19_1_2_3 {
             lineStream.filter(line -> {
                 Matcher matcher = pattern.matcher(line);
                 return matcher.find();
-            }).forEach(line -> System.out.println(line));
+            }).forEach(System.out::println);
         }
     }
 
