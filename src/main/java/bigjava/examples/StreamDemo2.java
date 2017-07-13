@@ -1,4 +1,4 @@
-package bigjava.examples.steam;
+package bigjava.examples;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,4 +1,4 @@
-package stepic.examples.example_1_4_streams;
+package stepic.examples.streams_1_4;
 
 import java.math.BigInteger;
 import java.util.Arrays;

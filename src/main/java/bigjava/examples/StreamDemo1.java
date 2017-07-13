@@ -1,4 +1,4 @@
-package bigjava.examples.steam;
+package bigjava.examples;
 
 import java.io.File;
 import java.io.FileNotFoundException;
