@@ -48,7 +48,6 @@ public class ProcessingEmployees {
         );
 
         System.out.printf("%nCount of Employees by department:%n");
-
         Map<String, List<Employee>> employeeCountByDepartment =
                 list.stream().collect(Collectors.groupingBy(Employee::getDepartment));
 

@@ -1,4 +1,4 @@
-package stepic.examples;
+package stepic;
 
 import java.util.ArrayList;
 import java.util.List;

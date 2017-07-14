@@ -1,4 +1,4 @@
-package stepic.examples;
+package stepic;
 
 import java.math.BigInteger;
 import java.util.Arrays;

@@ -1,5 +1,7 @@
 package bigjava.exercise_e19_12;
 
+import java.util.stream.Stream;
+
 /**
  * •• E19.12 Write a method
  * public static Stream<String> characters(String str)
@@ -10,7 +12,11 @@ package bigjava.exercise_e19_12;
 public class Exercise_e19_12 {
 
     public static void main(String[] args) {
+        characters("char");
+    }
 
+    public static Stream<String> characters(String str) {
+        return null;
     }
 
 }

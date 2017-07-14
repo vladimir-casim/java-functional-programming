@@ -1,4 +1,4 @@
-package stepic.examples;
+package stepic;
 
 
 import java.util.HashSet;
@@ -58,8 +58,6 @@ public class ProductionNumbers {
         // Reference to a constructor of String class
         Supplier<String> stringGenerator = String::new;
         Supplier<String> stringGeneratorLambda = () -> new String();
-
-
     }
 
 }
