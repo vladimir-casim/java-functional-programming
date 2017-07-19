@@ -1,4 +1,4 @@
-package bigjava.exercise_e19_5_6;
+package bigjava.exercises;
 
 import java.util.Currency;
 import java.util.List;

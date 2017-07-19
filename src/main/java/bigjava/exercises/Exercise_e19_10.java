@@ -1,4 +1,4 @@
-package bigjava.exercise_e19_10;
+package bigjava.exercises;
 
 import java.util.ArrayList;
 import java.util.List;

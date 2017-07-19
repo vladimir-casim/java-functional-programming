@@ -1,4 +1,4 @@
-package bigjava.exercise_e19_12;
+package bigjava.exercises;
 
 import java.util.stream.Stream;
 

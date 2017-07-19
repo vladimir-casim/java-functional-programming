@@ -1,4 +1,4 @@
-package bigjava.exercise_e19_18;
+package bigjava.exercises;
 
 /**
  * •• E19.18 Write a program that reads a Stream<Country> from a file that

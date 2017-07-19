@@ -1,4 +1,4 @@
-package bigjava.exercise_e19_1_2_3;
+package bigjava.exercises;
 
 import java.io.IOException;
 import java.nio.file.Files;

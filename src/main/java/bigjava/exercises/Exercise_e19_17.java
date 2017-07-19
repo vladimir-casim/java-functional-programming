@@ -1,4 +1,4 @@
-package bigjava.exercise_e19_17;
+package bigjava.exercises;
 
 /**
  * •• E19.17 Assume that a BankAccount class has methods for yielding the account owner’s name

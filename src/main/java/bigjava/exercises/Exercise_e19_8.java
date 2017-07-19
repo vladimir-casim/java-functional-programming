@@ -1,7 +1,6 @@
-package bigjava.exercise_e19_8;
+package bigjava.exercises;
 
 import java.util.Arrays;
-import java.util.function.Function;
 
 /**
  * • E19.8 Write a program that sorts an array of bank accounts by increasing balance. Pass an

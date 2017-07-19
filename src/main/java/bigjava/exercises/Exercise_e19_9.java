@@ -1,4 +1,4 @@
-package bigjava.exercise_e19_9;
+package bigjava.exercises;
 
 
 import java.io.File;

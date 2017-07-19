@@ -1,4 +1,4 @@
-package bigjava.exercise_e19_20;
+package bigjava.exercises;
 
 /**
  * ••• E19.20 Find all adjacent duplicates of a Stream<String>, by using a

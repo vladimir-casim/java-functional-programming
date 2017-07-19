@@ -1,4 +1,4 @@
-package bigjava.exercise_e19_19;
+package bigjava.exercises;
 
 /**
  * •• E19.19 Write a function that returns a list of all positions of a given
