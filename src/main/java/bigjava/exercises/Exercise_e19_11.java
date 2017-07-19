@@ -14,7 +14,8 @@ public class Exercise_e19_11 {
         IntStream stream = IntStream.range(1, n);
         stream.map(num -> num * num).filter(num -> {
             String intStr = String.valueOf(num);
-            return intStr.equals(new StringBuilder(intStr).reverse().toString());
+            boolean isPolindrome = intStr.equals(new StringBuilder(intStr).reverse().toString());
+            return isPolindrome;
         }).forEach(System.out::println);
     }
 
