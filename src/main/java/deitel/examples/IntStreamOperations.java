@@ -1,6 +1,7 @@
 package deitel.examples;
 
 import java.util.stream.IntStream;
+import java.util.stream.LongStream;
 
 public class IntStreamOperations {
 
@@ -20,8 +21,11 @@ public class IntStreamOperations {
         System.out.printf("%nSum via reduce method: %d%n", IntStream.of(values)
                 .reduce(0, (x, y) -> x + y));
 
+        IntStream.of(values).filter(n -> n % 2 != 0).reduce(0, (x, y) -> x + y);
+
         System.out.printf("Sum of squares via reduce method: %d%n", IntStream.of(values)
                 .reduce(0, (x, y) -> x + y * y));
+        LongStream.range(2, 5).reduce(1, (x, y) -> x * y);
 
         // product of values with reduce method
         System.out.printf("Product via reduce method: %d%n", IntStream.of(values)

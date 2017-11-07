@@ -34,7 +34,6 @@ public class ProcessingEmployees {
 
         System.out.printf("%nFirst employee who earns $4000-$6000:%n%s%n",
                 list.stream().filter(fourToSixThousand).findFirst().get());
-
         System.out.printf("%nEmployees by department:%n");
         Map<String, List<Employee>> groupedByDepartment =
                 list.stream().collect(Collectors.groupingBy(Employee::getDepartment));
